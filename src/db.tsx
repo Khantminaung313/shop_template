@@ -1,0 +1,67 @@
+export const productsData = [
+    {
+        id: 1,
+        name: "Nike Air Force 1",
+        thumbnail:
+            "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-mens-shoes-jBrhbr.png",
+        catId: 1,
+        intro: "Men's shoe",
+        color: "4 colors",
+        price: 150,
+        rating: 4.5,
+        newProduct: false,
+        discount: 20,
+    },
+    {
+        id: 2,
+        name: "Nike Air Force 1 LE",
+        thumbnail:
+            "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6766f1e6-c5e7-4434-af10-562de3473b1b/air-force-1-le-big-kids-shoes-CZDf8b.png",
+        catId: 1,
+        intro: "Big Kid's shoe",
+        color: "2 colors",
+        price: 90,
+        rating: 4.5,
+        newProduct: false,
+        discount: 15,
+    },
+    {
+        id: 3,
+        name: "Nike Air Force 1 Next Nature",
+        thumbnail:
+            "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b1f66efb-b849-4536-8c75-e098ee2b2b11/air-force-1-07-next-nature-womens-shoes-fvxZ0g.png",
+        catId: 1,
+        intro: "Women's shoe",
+        color: "6 colors",
+        price: 115,
+        rating: 4.5,
+        newProduct: true,
+        discount: 15,
+    },
+    {
+        id: 4,
+        name: "Elastic Waist 3-stripe Cozy Joggers",
+        thumbnail:
+            "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/4340a9730a8e442aa5425239516e8a0e_9366/elastic-waist-3-stripe-cozy-joggers.jpg",
+        catId: 1,
+        intro: "Men's pant",
+        color: "6 colors",
+        price: 36,
+        rating: 4.0,
+        newProduct: true,
+        discount: 15,
+    },
+    {
+        id: 5,
+        name: "Club Tennis 3 Stripes Tee",
+        thumbnail:
+            "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/2c8b76c0b3894b10a4d0aef5010f1d42_9366/club-tennis-3-stripes-tee.jpg",
+        catId: 1,
+        intro: "Men's Top",
+        color: "6 colors",
+        price: 35,
+        rating: 5.0,
+        newProduct: true,
+        discount: 20,
+    },
+];

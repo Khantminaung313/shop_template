@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html{
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        list-style: none;
+        text-decoration: none;
+        overflow-x: hidden;
+    }
+}
+
+@layer components{
+    .d_fluid {
+        @apply w-full;
+    }
+
+    .d_container{
+        @apply w-full px-4 sm:px-12 lg:px-20 xl:px-28;
+    }
+
+    .header-section{
+        width: 100%;
+        position: sticky;
+        top: 12px;
+        left: 0;
+    }
+
+    .nav-list > li > span{
+        cursor: pointer;
+        font-size: 1.2rem;
+        position: relative;
+    }
+
+    .nav-list > li > span:hover, .active{
+        color: #33acf7;
+        transition: all .3s linear;
+        transform-origin: right;
+    }
+
+    .nav-list > li > span::after{
+        content: '';
+        position: absolute;
+        border-radius: 15px;
+        width: 0%;
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        background-color: #33acf7;
+        transition: all .3s linear;
+        transform-origin: right;
+    }
+
+    .nav-list > li > span:hover::after{
+        width: 100%;
+    }
+
+    .nav-list > li > .active::after {
+        content: '';
+        position: absolute;
+        border-radius: 15px;
+        width: 100%;
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        background-color: #33acf7;
+        transition: all .3s linear;
+        transform-origin: right;
+    }
+
+    .categories-data-container{
+        display: none;
+        opacity: 0;
+    }
+
+    .categories-nav:hover .categories-data-container{
+        display: block;
+        opacity: 100%;
+    }
+
+    .formInput{
+        @apply focus:outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+    }
+
+    /* Add these styles to your CSS */
+.transition-max-height {
+    transition: max-height 0.3s ease-in-out;
+  }
+  .max-h-0 {
+    max-height: 0;
+  }
+  .max-h-96 {
+    max-height: 24rem; /* Or any large value that will cover the content's height */
+  }
+  
+}
